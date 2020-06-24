@@ -28,7 +28,9 @@ public class EmployeeController {
 		Emp e1=service.findEmployee(e);
 		return e1;
 	}
-	
+		/**
+	* Create given employee ... 
+	*/
 	@PostMapping("/emps/")
 	public void save(@RequestBody Emp emp) {
 		service.save(emp);
