@@ -20,6 +20,9 @@ public class EmployeeController {
 	@Autowired
 	EmployeeService service;
 	
+	/*
+	 * retrieve all the employees
+	 */
 	@GetMapping("/emps/")
 	public Emp employee(@RequestParam Integer empno) {
 		System.out.println("****EMPNO" + empno+"********");
